@@ -1,5 +1,5 @@
 // Creare l’array di oggetti con le informazioni fornite.
-
+const row = document.querySelector('.row');
 const user = [
     {
         nome: 'Wayne Barnet',
@@ -32,4 +32,6 @@ const user = [
         foto: 'barbara-ramos-graphic-designer.jpg',
     },
     
-]
+];
+
+console.log(user);
