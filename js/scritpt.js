@@ -62,6 +62,12 @@ const users = [
 ];
 
 for(let user of users){
+
+    let listaAggettivi = '';
+
+    for(let agg of user.aggettivi){
+        listaAggettivi += `<li>${agg}</li>`;
+    }
     let card = `
         <div class="col-4 py-3">
             <div class="card" style="width: 18rem;">
@@ -70,7 +76,7 @@ for(let user of users){
                     <p class="card-text">${user.nome}</p>
                     <p class="card-text">${user.ruolo}</p>
                     <ul>
-                        <li>${user.aggettivi}</li>
+                        ${listaAggettivi}
                     </ul>
                 </div>
             </div>
