@@ -61,6 +61,8 @@ const users = [
     
 ];
 
+
+
 for(let user of users){
 
     let listaAggettivi = '';
@@ -70,7 +72,7 @@ for(let user of users){
     }
     let card = `
         <div class="col-4 py-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card text-center border-light" style="width: 18rem;">
                 <img src="img/${user.foto}" class="card-img-top" alt="${user.foto}">
                 <div class="card-body">
                     <p class="card-text">${user.nome}</p>
