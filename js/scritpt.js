@@ -6,9 +6,9 @@ const users = [
         ruolo: 'Founder & CEO',
         foto: 'wayne-barnett-founder-ceo.jpg',
         aggettivi: [
-            'estroversa',
-            'solare',
-            'ottimista',
+            'Estroversa',
+            'Solare',
+            'Ottimista',
         ]
     },
     {
@@ -16,8 +16,8 @@ const users = [
         ruolo: 'Chief Editor',
         foto: 'angela-caroll-chief-editor.jpg',
         aggettivi: [
-            'vivace',
-            'entusiasta',
+            'Vivace',
+            'Entusiasta',
         ]
     },
     {
@@ -25,9 +25,9 @@ const users = [
         ruolo: 'Office Manager',
         foto: 'walter-gordon-office-manager.jpg',
         aggettivi: [
-            'autorevole',
-            'tranquillo',
-            'chiacchierone',
+            'Autorevole',
+            'Tranquillo',
+            'Chiacchierone',
         ]
     },
     {
@@ -35,8 +35,8 @@ const users = [
         ruolo: 'Social Media Manager',
         foto: 'angela-lopez-social-media-manager.jpg',
         aggettivi: [
-            'entusista',
-            'ottimista',
+            'Entusista',
+            'Ottimista',
         ]
     },
     {
@@ -44,9 +44,9 @@ const users = [
         ruolo: 'Developer',
         foto: 'scott-estrada-developer.jpg',
         aggettivi: [
-            'solare',
-            'tranquillo',
-            'coinvolgente',
+            'Solare',
+            'Tranquillo',
+            'Coinvolgente',
         ]
     },
     {
@@ -75,11 +75,11 @@ for(let user of users){
             <div class="card text-center border-light" style="width: 18rem;">
                 <img src="img/${user.foto}" class="card-img-top" alt="${user.foto}">
                 <div class="card-body">
-                    <p class="card-text">${user.nome}</p>
+                    <h3 class="card-text">${user.nome}</h3>
                     <p class="card-text">${user.ruolo}</p>
-                    <ul>
+                    <ol>
                         ${listaAggettivi}
-                    </ul>
+                    </ol>
                 </div>
             </div>
         </div>`;
